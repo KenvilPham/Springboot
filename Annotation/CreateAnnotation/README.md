@@ -1,14 +1,13 @@
-## Getting Started
+II. Bài 2: Dựa vào demoannotation project, hãy tạo một project java đơn giản sử dụng single value annotaion tự định nghĩa: Thuộc tính của annotaion
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Tên annotaion: MyNumberAnnotaion
+Retention: runtime
+Target: method
+Method: value() trả về kiểu int với default là 0.
+Tạo class HelloWord với một method sayHello() (In ra dòng sau: "Hello custom annotation") sử dụng annotation trên
 
-## Folder Structure
+Tạo class Test với phương thức main
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-## Dependency Management
-
-The `JAVA DEPENDENCIES` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-pack/blob/master/release-notes/v0.9.0.md#work-with-jar-files-directly).
+Tạo một instance HelloWord
+Lấy đối tượng Method có tên là "sayHello" (gợi ý: HelloWord h=new HelloWord(); Method m=h.getClass().getMethod("sayHello"));
+In ra value của annotation của method m
