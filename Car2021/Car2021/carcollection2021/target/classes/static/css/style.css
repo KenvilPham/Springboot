@@ -11,21 +11,27 @@
 
 ul, li {
     list-style-type: none;
-    padding: 0;
 }
 
-.car-item {
+.list-item {
     display: flex;
     flex-direction: row;
+    width: 600px;
+    height: 300px;
+    border: 1px solid #BFBFBF;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    margin: 30px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 50px;
+
 }
 
 img {
-    width: 50%;
-    object-fit: cover;
-}
-
-.infomation {
-    display: flex;
-    flex-direction: column;
-    
+    width: 100%;
+    object-fit: fill;
 }

@@ -10,11 +10,9 @@
 <body>
     <div class="container">
         <ul class="collection-car">
-            <li th:each="car: ${cars}" class="car-item">
-                <div class="car-thumbnail">
-                    <img th:attr="src=${car.photoUri}, alt=${car.name}"/>
-                </div>
-                <div class="infomation">
+            <li th:each="car: ${cars}" class="list-item">
+                <img th:attr="src=${car.photoUri}, alt=${car.name}"/>
+                <div class="info">
                     <h4 th:text="${car.name}"></h4>
                     <h4 th:text="${car.manufacturer}"></h4>
                     <h4 th:text="${car.price}"></h4>
